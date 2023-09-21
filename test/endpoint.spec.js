@@ -7,7 +7,6 @@ describe('Valida el archivo JSON del flow', () => {
     ).toBe(true);
   });
   
-
   test('Debe hacer uso de Embeddings', () => {
     expect(
       flow.nodes.some((node) => node.data.category.includes('Embeddings'))
